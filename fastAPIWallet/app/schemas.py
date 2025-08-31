@@ -11,6 +11,7 @@ class UserOut(BaseModel):
     class Config:
         from_attributes = True
 
+
 class WalletUpdateIn(BaseModel):
     user_id: int
     amount: float = Field(..., gt=0)
