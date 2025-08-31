@@ -19,6 +19,7 @@ class WalletUpdateIn(BaseModel):
     @field_validator("action")
     def lower_action(cls, v): return v.lower()
 
+
 class WalletUpdateOut(BaseModel):
     user_id: int
     new_balance: float
